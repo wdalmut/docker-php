@@ -1,0 +1,8 @@
+# Dockerfiles for PHP
+
+Just my docker files for PHP testing containers
+
+```
+docker build -t wdalmut/php:5.x .
+```
+
