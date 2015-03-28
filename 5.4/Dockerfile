@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y git curl libcurl4-openssl-dev zlib1g-de
 RUN docker-php-ext-install sockets
 RUN docker-php-ext-install curl
 RUN docker-php-ext-install zip
+RUN docker-php-ext-install mbstring
 
 WORKDIR /usr/local/bin
 RUN curl -sS https://getcomposer.org/installer | php
