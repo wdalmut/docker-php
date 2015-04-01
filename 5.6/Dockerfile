@@ -12,6 +12,7 @@ RUN docker-php-ext-install curl
 RUN docker-php-ext-install zip
 RUN docker-php-ext-install mbstring
 RUN docker-php-ext-install intl
+RUN docker-php-ext-install json
 RUN docker-php-ext-install mongo-1.5.8
 
 WORKDIR /usr/local/bin
