@@ -3,7 +3,7 @@ FROM php:5.5
 WORKDIR /tmp
 
 RUN apt-get update && apt-get install -y socat build-essential libicu-dev git curl libcurl4-openssl-dev zlib1g-dev && rm -rf /var/lib/apt/lists/*
-RUN curl http://pecl.php.net/get/mongo-1.5.8.tgz > /tmp/mongo.tgz
+RUN curl https://pecl.php.net/get/mongo-1.5.8.tgz > /tmp/mongo.tgz
 RUN tar -xpzf mongo.tgz
 RUN mv /tmp/mongo-1.5.8 /usr/src/php/ext
 
