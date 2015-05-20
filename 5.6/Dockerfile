@@ -17,6 +17,7 @@ RUN docker-php-ext-install xmlrpc
 RUN docker-php-ext-install xsl
 RUN docker-php-ext-install mongo-1.5.8
 RUN docker-php-ext-install mysql
+RUN docker-php-ext-install pdo_mysql
 
 WORKDIR /usr/local/bin
 RUN curl -sS https://getcomposer.org/installer | php
