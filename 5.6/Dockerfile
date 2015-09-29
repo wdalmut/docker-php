@@ -24,4 +24,6 @@ RUN curl -sS https://getcomposer.org/installer | php
 RUN chmod a+x composer.phar
 RUN mv composer.phar composer
 
+RUN sed -i -e 's/#   StrictHostKeyChecking ask/StrictHostKeyChecking no/g' /etc/ssh/ssh_config
+
 CMD ["php", "-v"]
